@@ -10,15 +10,14 @@ body {
   color: #333;
 }
 
-/* Header */
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
   background-color: #1abc9c;
   color: #fff;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .logo h1 {
@@ -30,23 +29,36 @@ body {
   margin-top: 5px;
 }
 
-.menu a {
+.menu {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu ul li a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-.menu a:hover,
-.menu a.activo {
-  color: #333;
-  background-color: #fff;
-  padding: 5px 10px;
+  font-weight: bold;
+  padding: 8px 14px;
   border-radius: 5px;
+  transition: background 0.3s;
+  background-color: transparent;
 }
 
-/* Curriculum Main */
+.menu ul li a:hover,
+.menu ul li a.activo {
+  background-color: #ffffff;
+  color: #1abc9c;
+}
+
 .curriculum {
   padding: 50px 20px;
   max-width: 1200px;
@@ -102,19 +114,48 @@ body {
   line-height: 1.4;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    margin-top: 10px;
-  }
-
   .grid {
     flex-direction: column;
     gap: 20px;
   }
+
+  .header {
+    padding: 20px 10px;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu ul {
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .col {
+    padding: 15px;
+  }
+
+  .perfil p {
+    font-size: 1rem;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
 }
