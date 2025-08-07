@@ -36,4 +36,4 @@ Este es un portafolio digital desarrollado en HTML y CSS, como proyecto académi
 - ##  Enlaces del Proyecto
 
 -  **Sitio en Vercel:** [https://tu-proyecto.vercel.app](https://tu-proyecto.vercel.app)
--  **Repositorio en GitHub:** [https://github.com/tu_usuario/portafolio](https://github.com/tu_usuario/portafolio)
+-  **Repositorio en GitHub:** [[(https://github.com/Georginaelena03/Proyecto-Final/tree/main)]
