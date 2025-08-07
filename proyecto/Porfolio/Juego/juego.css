@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #1abc9c;
+  padding: 20px;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.logo p {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu ul li a:hover,
+.menu ul li a.activo {
+  background-color: #ffffff;
+  color: #1abc9c;
+}
+
+.contenido {
+  margin-top: 50px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+#reiniciarBtn {
+  margin-left: 10px;
+  background-color: #f39c12;
+}
+
+#reiniciarBtn:hover {
+  background-color: #e67e22;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
